@@ -12,12 +12,12 @@
       <button type="submit">Get a random Joke</button>
     </form>
     <FetchNewDataButton :selected-category="selectedCategory" :current-data="data" @fetch="fetchRandom"></FetchNewDataButton>
-    <Container :previous-data="this.previousData" :data="data" />
+    <JokeContainer :previous-data="this.previousData" :data="data" />
   </div>
 </template>
 
 <script>
-import Container from '@/components/Container.vue';
+import JokeContainer from '@/components/JokeContainer.vue';
 import FetchNewDataButton from '@/components/FetchNewDataButton.vue';
 import axios from 'axios';
 import FormCategorySelector from '@/components/FormCategorySelector.vue';
@@ -26,7 +26,7 @@ export default {
   components: {
     FormCategorySelector,
     FetchNewDataButton,
-    Container,
+    JokeContainer,
   },
   props: {
     categories: {

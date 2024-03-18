@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img style="width: 10%;" src="./assets/logo.png" />
-    <form-wrapper :categories="['dev', 'science', 'technology', 'sport', 'history', 'food', 'vue']" style="margin-top:3em;"/>
+    <img src="./assets/logo.png" alt="logo" class=" w-2/12"/>
+    <form-wrapper :categories="['dev', 'science', 'technology', 'sport', 'history', 'food', 'vue']"
+      style="margin-top:3em;"/>
   </div>
 </template>
 

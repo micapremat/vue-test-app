@@ -2,24 +2,24 @@
   <div id="container-wrapper">
     <div style="width: 50%">
       <h1 style="font-size: 14px; color:#229392;">Current</h1>
-      <display-current :data="data"></display-current>
+      <JokeDisplay :text="data.value"></JokeDisplay>
     </div>
     <div style="width: 50%">
       <h1 style="font-size: 14px; color:#229392;">Previous quotes</h1>
-      <DisplayPrev :previous-data="previousData"></DisplayPrev>
+      <JokeDisplayPrev :previous-data="previousData"></JokeDisplayPrev>
     </div>
 
   </div>
 </template>
 
 <script>
-import DisplayCurrent from '@/components/DisplayCurrent.vue';
-import DisplayPrev from './DisplayPrev.vue';
+import JokeDisplay from '@/components/JokeDisplay.vue';
+import JokeDisplayPrev from './JokeDisplayPrev.vue';
 
 export default {
   components: {
-    DisplayPrev,
-    DisplayCurrent,
+    JokeDisplayPrev,
+    JokeDisplay,
   },
   props: {
     data: {
@@ -33,7 +33,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 #container-wrapper {
   display: flex;
 }
@@ -42,4 +42,4 @@ export default {
   flex-direction: row;
   justify-content: space-between;
 }
-</style>
+</style>./JokeDisplayPrev.vue
