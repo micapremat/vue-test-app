@@ -28,7 +28,6 @@ export default {
           .then((response) => {
             self.$parent.data = response.data;
             self.$global.previousData.push(response.data);
-            self.$parent.previousData.push(response.data);
           })
           .catch((error) => {
             console.error('Error fetching data:', error);

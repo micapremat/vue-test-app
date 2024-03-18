@@ -1,7 +1,7 @@
 <template>
   <div class="data">
-    <p v-for="data in prevs">
-      <Display :text="data.value"/>
+    <p v-for="(data, index) in prevs" >
+      <Display :text="data.value"/> <span style="color:red; cursor: pointer;" @click="deleteItem(index)">Delete</span>
     </p>
   </div>
 </template>
@@ -15,6 +15,11 @@ export default {
     return {
       prevs: this.$global.previousData,
     };
+  },
+  methods: {
+    deleteItem(index) {
+      this.prevs.splice(index, 1);
+    }
   },
   props: {
     previousData: {

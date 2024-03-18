@@ -38,7 +38,9 @@ export default {
     return {
       newText: '',
       selectedCategory: '',
-      data: {},
+      data: {
+        value: '',
+      },
       previousData: [],
     };
   },

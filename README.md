@@ -16,6 +16,7 @@ The app should be at least as functional, as from start.
   * View previous jokes
   * Create a new joke
   * Generate a random joke
+  * Delete previous joke
 * Tailwind CSS should be installed and integrated into the project using a package manager
 
 Besides the requirements feel free to develop what you see fit.
