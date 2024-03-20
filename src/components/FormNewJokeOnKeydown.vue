@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <span><b>Press <span style="color:#229392;">'Ctrl + Y'</span> for new joke</b></span>
+  <div class="flex justify-center py-2">
+    <span class="font-semibold text-lg">
+      Press <span class=" text-cyan-600">'Ctrl + Y'</span> for new joke
+    </span>
   </div>
 </template>
 

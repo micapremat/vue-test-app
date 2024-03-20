@@ -1,6 +1,8 @@
 <template>
-  <label for="category">Select a category:
-    <select v-model="selectedValue" id="category">
+  <label for="category" class="block sm:inline-block font-semibold text-lg">Select a category:
+    <select v-model="selectedValue" id="category"
+      class="block m-auto my-2 sm:inline-block border border-gray-300 rounded-lg
+      sm:mx-4 font-normal px-2 w-52">
       <option value="">Any</option>
       <option v-for="category in categories" :key="category" :value="category">
         {{ category }}

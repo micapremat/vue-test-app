@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import requestPlugin from '@/plugins/request';
 import App from './App.vue';
+import './assets/main.css';
 import './index.css';
 
 Vue.config.productionTip = false;

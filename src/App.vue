@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <header>
-      <img src="./assets/logo.png" alt="logo" class=" w-2/12"/>
+    <header class=" flex justify-center py-10">
+      <img src="./assets/logo.png" alt="logo" class=" w-3/6 sm:w-3/12 md:w-2/12"/>
     </header>
-    <body>
-      <HomeWrapper style="margin-top:3em;"/>
+    <body class="min-w-full justify-center text-center">
+      <HomeWrapper />
     </body>
   </div>
 </template>
@@ -21,12 +21,5 @@ export default {
 </script>
 
 <style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

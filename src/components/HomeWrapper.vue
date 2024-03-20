@@ -3,7 +3,7 @@
     <div>
       <FormWrapper @data="setData" @newJoke="create" @getNewJoke="getJokes"/>
     </div>
-    <div>
+    <div class="m-auto text-center">
       <JokeContainer :previous-data="this.previousData" :data="data" />
     </div>
   </div>

@@ -1,8 +1,8 @@
 <template>
   <div class="data">
     <p v-for="(data, index) in prevs" :key="index">
-      <JokeDisplayCurrent v-if="data && data.value" :text="data.value"/>
-      <button @click="deleteItem(index)" class=" text-red-600">
+      <JokeDisplay :text="data.value"/>
+      <button @click="deleteItem(index)" class="mt-2 text-red-600 font-medium">
         Delete
       </button>
     </p>
@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import JokeDisplayCurrent from '@/components/JokeDisplayCurrent.vue';
+import JokeDisplay from '@/components/JokeDisplay.vue';
 
 export default {
-  components: { JokeDisplayCurrent },
+  components: { JokeDisplay },
   data() {
     return {
       prevs: this.previousData,

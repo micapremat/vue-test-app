@@ -1,11 +1,11 @@
 <template>
-  <div id="container-wrapper">
-    <div style="width: 50%">
-      <h1 style="font-size: 14px; color:#229392;">Current</h1>
-      <JokeDisplayCurrent :text="data.value" />
+  <div class=" sm:flex sm:flex-row sm:justify-around m-auto px-10">
+    <div class="px-3 text-center sm:w-1/2 sm:min-w-1/2">
+      <h1 class="text-cyan-600 text-lg font-bold" >Current</h1>
+      <JokeDisplay :text="data.value" />
     </div>
-    <div style="width: 50%">
-      <h1 style="font-size: 14px; color:#229392;">Previous quotes</h1>
+    <div class="px-3 text-center sm:w-1/2 sm:min-w-1/2">
+      <h1 class="text-cyan-600 text-lg font-bold" >Previous quotes</h1>
       <JokeDisplayPrev :previous-data="previousData" />
     </div>
 
@@ -13,13 +13,13 @@
 </template>
 
 <script>
-import JokeDisplayCurrent from '@/components/JokeDisplayCurrent.vue';
+import JokeDisplay from '@/components/JokeDisplay.vue';
 import JokeDisplayPrev from './JokeDisplayPrev.vue';
 
 export default {
   components: {
     JokeDisplayPrev,
-    JokeDisplayCurrent,
+    JokeDisplay,
   },
   props: {
     data: {
@@ -34,12 +34,5 @@ export default {
 };
 </script>
 <style scoped>
-#container-wrapper {
-  display: flex;
-}
 
-.two-columns {
-  flex-direction: row;
-  justify-content: space-between;
-}
-</style>./JokeDisplayPrev.vue
+</style>
