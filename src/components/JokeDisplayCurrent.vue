@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'JokeDisplay',
+  name: 'JokeDisplayCurrent',
   props: {
     text: {
       type: String,

@@ -2,24 +2,24 @@
   <div id="container-wrapper">
     <div style="width: 50%">
       <h1 style="font-size: 14px; color:#229392;">Current</h1>
-      <JokeDisplay :text="data.value"></JokeDisplay>
+      <JokeDisplayCurrent :text="data.value" />
     </div>
     <div style="width: 50%">
       <h1 style="font-size: 14px; color:#229392;">Previous quotes</h1>
-      <JokeDisplayPrev :previous-data="previousData"></JokeDisplayPrev>
+      <JokeDisplayPrev :previous-data="previousData" />
     </div>
 
   </div>
 </template>
 
 <script>
-import JokeDisplay from '@/components/JokeDisplay.vue';
+import JokeDisplayCurrent from '@/components/JokeDisplayCurrent.vue';
 import JokeDisplayPrev from './JokeDisplayPrev.vue';
 
 export default {
   components: {
     JokeDisplayPrev,
-    JokeDisplay,
+    JokeDisplayCurrent,
   },
   props: {
     data: {

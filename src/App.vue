@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" alt="logo" class=" w-2/12"/>
-    <form-wrapper :categories="['dev', 'science', 'technology', 'sport', 'history', 'food', 'vue']"
-      style="margin-top:3em;"/>
+    <header>
+      <img src="./assets/logo.png" alt="logo" class=" w-2/12"/>
+    </header>
+    <body>
+      <HomeWrapper style="margin-top:3em;"/>
+    </body>
   </div>
 </template>
 
 <script>
+import HomeWrapper from '@/components/HomeWrapper.vue';
+
+export default {
+  components: {
+    HomeWrapper,
+  },
+};
 
 </script>
 

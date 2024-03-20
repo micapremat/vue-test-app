@@ -1,15 +1,16 @@
 import Vue from 'vue';
-import FormWrapper from '@/components/FormWrapper.vue';
+import requestPlugin from '@/plugins/request';
 import App from './App.vue';
 import './index.css';
 
 Vue.config.productionTip = false;
-
-Vue.prototype.$global = {
-  previousData: [],
+const plugin = {
+  install() {
+    Vue.prototype.$request = requestPlugin;
+  },
 };
 
-Vue.component('form-wrapper', FormWrapper);
+Vue.use(plugin);
 
 new Vue({
   render: (h) => h(App),
